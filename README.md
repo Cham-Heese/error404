@@ -3,7 +3,6 @@ This is a comprehensive README.md file for your "Error404 - Digital Solutions" w
 ```markdown
 # Error404 - Digital Solutions
 
-![Error404 Logo](https://via.placeholder.com/150x50/5b7a9a/ffffff?text=Error404)
 
 A modern, responsive HTML website for a general IT consulting company. Built with clean design principles, soft animations, and a focus on user experience.
 
@@ -38,8 +37,6 @@ error404-digital-solutions/
 │
 ├── index.html          # Main website file
 ├── README.md           # Project documentation
-└── assets/             # (Optional - for local images)
-    └── images/         # Placeholder for custom images
 ```
 
 ## 🎨 Color Palette
@@ -153,11 +150,11 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Contact
 
 **Error404 - Digital Solutions**  
-- Email: hello@error404.digital *(placeholder)*
-- Website: [www.error404.digital](#) *(placeholder)*
-- GitHub: [@yourusername](#)
+- Email: hello@error404.digital 
+- Website: [www.error404.digital](#) 
+- GitHub: [@cham-heese](#)
 
 ---
 
 *Designed with ❤️ for modern IT consulting*
-Linux Class Repo for GPB NK 
+ 
