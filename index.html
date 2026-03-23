@@ -62,21 +62,32 @@
       border: 1px solid var(--border-soft);
     }
 
-    /* custom logo image from file */
-    .logo-link {
+    /* Custom text logo */
+    .logo {
       display: flex;
       align-items: center;
+      gap: 0.2rem;
+      font-weight: 600;
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
       text-decoration: none;
     }
-    .logo-img {
-      height: 52px;          /* fits nicely in header */
-      width: auto;
-      display: block;
-      transition: transform 0.2s ease;
+    .logo-code {
+      background: var(--orange-brand);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 40px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-right: 0.3rem;
     }
-    .logo-img:hover {
-      transform: scale(1.02);
-      filter: drop-shadow(0 4px 10px rgba(217,124,74,0.15));
+    .logo-text {
+      color: var(--text-dark);
+    }
+    .logo-text span {
+      font-weight: 300;
+      color: var(--text-soft);
+      font-size: 1.3rem;
     }
 
     .nav-links {
@@ -384,12 +395,12 @@
 <body>
 
 <div class="container">
-  <!-- header with custom logo from local file -->
+  <!-- header with custom logo and menu (anchor links) -->
   <header>
     <nav class="navbar">
-      <!-- logo image: make sure the file is in the same folder as this HTML -->
-      <a href="#home" class="logo-link">
-        <img src="ChatGPT Image Mar 12, 2026, 10_19_23 AM.png" alt="Error404 Digital Solutions Logo" class="logo-img">
+      <a href="#home" style="text-decoration: none;" class="logo">
+        <span class="logo-code">404</span>
+        <span class="logo-text">Error<span> · digital</span></span>
       </a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
