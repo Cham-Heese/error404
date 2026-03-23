@@ -62,7 +62,7 @@
       border: 1px solid var(--border-soft);
     }
 
-    /* custom logo image (replaces previous text logo) */
+    /* custom logo image from file */
     .logo-link {
       display: flex;
       align-items: center;
@@ -384,9 +384,180 @@
 <body>
 
 <div class="container">
-  <!-- header with custom logo image (replaces previous text) and menu -->
+  <!-- header with custom logo from local file -->
   <header>
     <nav class="navbar">
-      <!-- logo image: exactly as provided -->
+      <!-- logo image: make sure the file is in the same folder as this HTML -->
       <a href="#home" class="logo-link">
-        <img src="data:image/png;base64,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AAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgAASAABIAAEAACQAAIAAEgAASAABAAAkAACAABIAAEgAAQAAJAAAgA
+        <img src="ChatGPT Image Mar 12, 2026, 10_19_23 AM.png" alt="Error404 Digital Solutions Logo" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#it-consulting">IT Consulting</a></li>
+        <li><a href="#networks">Networks</a></li>
+        <li><a href="#workspaces">Digital Workspaces</a></li>
+        <li><a href="#cloud">Cloud Computing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION (hero) -->
+  <section id="home" style="scroll-margin-top: 5rem;">
+    <div class="hero">
+      <h1>Future‑ready <span class="orange-highlight">IT Infrastructure</span><br> and Human‑Centred Consulting</h1>
+      <p>Error404 · Digital Solutions — turning complexity into clarity.</p>
+      <div class="hero-decoration"></div>
+    </div>
+  </section>
+
+  <!-- core capabilities title (below hero, above cards) -->
+  <div class="section-title"><span>Core capabilities</span></div>
+
+  <!-- clickable service cards (each links to its section) -->
+  <div class="cards-grid">
+    <a href="#it-consulting" class="card-link">
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>IT Consulting</h3>
+        <p>Strategic technology roadmaps, vendor agnostic advice, and risk‑aware digital transformation.</p>
+      </div>
+    </a>
+    <a href="#networks" class="card-link">
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h3>Networks</h3>
+        <p>Secure, scalable wired and wireless. SD-WAN, zero‑trust segmentation and 24/7 observability.</p>
+      </div>
+    </a>
+    <a href="#workspaces" class="card-link">
+      <div class="card">
+        <div class="card-icon">🖥️</div>
+        <h3>Digital Workspaces</h3>
+        <p>Modern endpoints, VDI, collaboration suites — productive and seamless from anywhere.</p>
+      </div>
+    </a>
+    <a href="#cloud" class="card-link">
+      <div class="card">
+        <div class="card-icon">☁️</div>
+        <h3>Cloud Computing</h3>
+        <p>Multi‑cloud strategy, native migrations, FinOps, and serverless architectures.</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- IT CONSULTING SECTION -->
+  <section id="it-consulting" class="service-section">
+    <div class="service-grid">
+      <div class="service-content">
+        <h2><span class="orange-accent">IT Consulting</span> — Strategy That Scales</h2>
+        <p>Our IT consulting practice helps leaders align technology with business goals. From digital roadmaps to vendor selection and risk management, we provide independent advice that reduces complexity.</p>
+        <p>We work with CIOs and founders to architect systems that are secure, future-proof, and cost-effective.</p>
+        <a href="#contact" class="cta-link">Talk to a consultant →</a>
+      </div>
+      <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Business team in a meeting discussing IT strategy">
+      </div>
+    </div>
+  </section>
+
+  <!-- NETWORKS SECTION -->
+  <section id="networks" class="service-section">
+    <div class="service-grid">
+      <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Network servers and cables">
+      </div>
+      <div class="service-content">
+        <h2><span class="orange-accent">Networks</span> — Fast, Secure, Observable</h2>
+        <p>We design and implement wired and wireless networks that just work. From SD-WAN to zero-trust segmentation, our solutions ensure low latency and high reliability.</p>
+        <p>24/7 observability means we catch issues before you do.</p>
+        <a href="#contact" class="cta-link">Get network design →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL WORKSPACES SECTION -->
+  <section id="workspaces" class="service-section">
+    <div class="service-grid">
+      <div class="service-content">
+        <h2><span class="orange-accent">Digital Workspaces</span> — Anywhere, Any Device</h2>
+        <p>Empower your workforce with modern endpoints, VDI, and collaboration tools. We build secure, manageable environments that employees love.</p>
+        <p>Whether it's Windows 365, Azure Virtual Desktop, or Google Workspace, we integrate it all.</p>
+        <a href="#contact" class="cta-link">Explore workspace solutions →</a>
+      </div>
+      <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Person working on laptop and tablet">
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOUD COMPUTING SECTION -->
+  <section id="cloud" class="service-section">
+    <div class="service-grid">
+      <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cloud concept with servers and data">
+      </div>
+      <div class="service-content">
+        <h2><span class="orange-accent">Cloud Computing</span> — Multi-Cloud, FinOps, Native</h2>
+        <p>We help you navigate AWS, Azure, and Google Cloud. From migrations to serverless architectures, we optimize for cost and performance.</p>
+        <p>Our FinOps practice ensures you never overpay.</p>
+        <a href="#contact" class="cta-link">Start your cloud journey →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="service-section" style="border-bottom: none;">
+    <div class="service-grid">
+      <div class="service-content">
+        <h2><span class="orange-accent">Contact</span> — Let's Talk Technology</h2>
+        <p>Whether you need a quick consultation or a full transformation, our team is ready.</p>
+        <div class="contact-details">
+          <p>📧 hello@error404.digital</p>
+          <p>📞 +1 (555) 404-7874</p>
+          <p>📍 15 Innovation Ave, San Francisco, CA</p>
+        </div>
+        <a href="#" class="cta-link" style="margin-top: 1.5rem;">Send us a message →</a>
+      </div>
+      <div class="service-image">
+        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Engineers with clipboard and tablet">
+      </div>
+    </div>
+  </section>
+
+  <!-- STOCK PHOTO GALLERY (additional imagery) -->
+  <div style="margin: 3rem 0;">
+    <h2 style="font-size: 2rem; font-weight: 400; color: var(--text-dark); margin-bottom: 2rem; text-align: center;">
+      <span style="border-bottom: 2px solid var(--orange-brand); padding-bottom: 0.2rem;">Inside our world</span>
+    </h2>
+    <div class="photo-grid">
+      <div class="photo-card">
+        <img class="photo-img" src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Network switches">
+        <div class="photo-caption"><strong>⬩ Structured networking</strong><p>High‑density switches and fiber backbone</p></div>
+      </div>
+      <div class="photo-card">
+        <img class="photo-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Server racks">
+        <div class="photo-caption"><strong>⬩ Resilient data core</strong><p>Redundant servers · 99.99% uptime</p></div>
+      </div>
+      <div class="photo-card">
+        <img class="photo-img" src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Engineer with clipboard">
+        <div class="photo-caption"><strong>⬩ On-site audit</strong><p>Engineers with digital clipboards</p></div>
+      </div>
+    </div>
+  </div>
+</div> <!-- end container -->
+
+<!-- footer -->
+<footer class="footer-soft">
+  <div style="margin-bottom: 0.5rem;">© 2025 Error404 – Digital Solutions</div>
+  <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+    <a href="#home">Imprint</a>
+    <a href="#home">Privacy</a>
+    <a href="#home">LinkedIn</a>
+    <a href="#home">Status</a>
+  </div>
+</footer>
+
+<!-- Smooth scroll and active state optional (all anchor links work) -->
+</body>
+</html>
